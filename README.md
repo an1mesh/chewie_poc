@@ -27,20 +27,61 @@ An Instagram-like vertical video feed application built with Flutter, featuring 
 
 ### Prerequisites
 
-- Flutter SDK (>=3.10.1)
+- Flutter SDK 3.38.6 (required)
 - Dart SDK
 - Android Studio / Xcode (for mobile development)
+- FVM (Flutter Version Management) - if your Flutter version is not 3.38.6
+
+### Flutter Version Management (FVM)
+
+If you don't have Flutter 3.38.6 installed, use FVM to manage Flutter versions:
+
+1. **Install FVM** (if not already installed):
+   ```bash
+   # macOS/Linux
+   brew tap leoafarias/fvm
+   brew install fvm
+   
+   # Or using pub
+   dart pub global activate fvm
+   ```
+
+2. **Install Flutter 3.38.6 using FVM**:
+   ```bash
+   fvm install 3.38.6
+   ```
+
+3. **Use Flutter 3.38.6 for this project**:
+   ```bash
+   fvm use 3.38.6
+   ```
+
+4. **Run Flutter commands with FVM**:
+   ```bash
+   fvm flutter pub get
+   fvm flutter run
+   ```
+   
+   Or configure your IDE to use the FVM Flutter SDK path (usually `.fvm/flutter_sdk`)
 
 ### Installation
 
 1. Clone the repository
 2. Install dependencies:
    ```bash
+   # If using FVM
+   fvm flutter pub get
+   
+   # If Flutter 3.38.6 is your default version
    flutter pub get
    ```
 
 3. Run the app:
    ```bash
+   # If using FVM
+   fvm flutter run
+   
+   # If Flutter 3.38.6 is your default version
    flutter run
    ```
 
